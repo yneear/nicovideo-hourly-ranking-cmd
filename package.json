@@ -1,0 +1,29 @@
+{
+  "name": "nicovideo-hourly-ranking-cmd",
+  "version": "0.1.0",
+  "description": "nicovideo-hourly-ranking-fetch command-line util",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yneear/nicovideo-hourly-ranking-cmd.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nicovideo-hourly-ranking-fetch"
+  ],
+  "bin": {
+    "nicohr": "./bin/nico.js"
+  },
+  "author": "yneear",
+  "license": "ISC",
+  "engines": {
+    "node": ">=4"
+  },
+  "dependencies": {
+    "colorful": "2.1.0",
+    "request": "2.69.0"
+  }
+
+}
