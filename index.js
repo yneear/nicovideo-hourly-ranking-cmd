@@ -12,7 +12,8 @@ var print = function (data) {
   console.log();
   for (var i = 0; i < data.length; i++) {
     var detail = data[i];
-    console.log( '  ' + String(detail.rankingId).yellow + '. '.yellow + detail.userNickname.blue + ' --- ' + detail.title.cyan);
+    var nickname = detail.userNickname ? detail.userNickname : 'anonymity';
+    console.log( '  ' + String(detail.rankingId).yellow + '. '.yellow + nickname.blue + ' --- ' + detail.title.cyan);
     console.log( '  upTime: ' + detail.upTime + '  url: '.grey + detail.watchUrl.gray );
     console.log();
   }
